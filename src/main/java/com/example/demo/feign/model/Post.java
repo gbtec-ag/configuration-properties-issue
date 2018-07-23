@@ -3,7 +3,7 @@ package com.example.demo.feign.model;
 import lombok.Data;
 
 @Data
-public class User {
+public class Post {
 
     private String userId;
     private String id;

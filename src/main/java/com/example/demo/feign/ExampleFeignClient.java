@@ -1,6 +1,6 @@
 package com.example.demo.feign;
 
-import com.example.demo.feign.model.User;
+import com.example.demo.feign.model.Post;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -8,5 +8,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface ExampleFeignClient {
 
     @RequestMapping("/posts/1")
-    User getUser();
+    Post getPost();
 }
