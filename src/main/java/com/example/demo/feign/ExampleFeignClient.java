@@ -8,5 +8,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface ExampleFeignClient {
 
     @RequestMapping("/posts/1")
-    public User getUser();
+    User getUser();
 }
