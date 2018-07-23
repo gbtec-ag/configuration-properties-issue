@@ -1,0 +1,11 @@
+keycloak:
+  host: localhost
+  port: 8085
+security:
+  oauth2:
+    client:
+      clientId: admin-cli
+      username: admin
+      password: secret
+      accessTokenUri: http://${keycloak.host}:${keycloak.port}/auth/realms/master/protocol/openid-connect/token
+      clientAuthenticationScheme: form
